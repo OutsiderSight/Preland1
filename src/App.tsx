@@ -4,10 +4,14 @@ import { Dialog } from './components/Dialog'
 
 function App() {
   return (
-    <div className="relative h-screen overflow-hidden flex items-center justify-center">
-      <ProfileGrid />
-      <Dialog />
-    </div>
+    <>
+      <div className="fixed inset-0 flex items-center justify-center overflow-hidden -z-10">
+        <ProfileGrid />
+      </div>
+      <div className="min-h-screen flex items-center justify-center py-8">
+        <Dialog />
+      </div>
+    </>
   )
 }
 

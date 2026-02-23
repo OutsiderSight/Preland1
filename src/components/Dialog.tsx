@@ -38,10 +38,7 @@ export function Dialog() {
     };
 
     return (
-        <div
-            className="absolute z-10 pointer-events-auto bg-gray-900/70 backdrop-blur-xl border border-gray-600/50 rounded-3xl shadow-2xl flex flex-col overflow-hidden"
-            style={{ top: 'calc(100% / 15)', bottom: 'calc(100% / 15)', left: '7.5%', right: '7.5%' }}
-        >
+        <div className="w-[85%] md:w-[34vw] bg-gray-900/70 backdrop-blur-xl border border-gray-600/50 rounded-3xl shadow-2xl flex flex-col overflow-hidden">
                 {/* Header */}
                 <div className="px-6 pt-6 pb-4 text-center">
                     <div className="text-4xl mb-3">🔥</div>
@@ -66,7 +63,7 @@ export function Dialog() {
                 </div>
 
                 {/* Body + CTA centered */}
-                <div className={`flex-1 min-h-0 flex flex-col px-6 gap-4 overflow-y-auto transition-opacity duration-500 ${step === 3 ? 'py-5' : 'items-center justify-center'} ${fading ? 'opacity-0' : 'opacity-100'}`}>
+                <div className={`flex flex-col px-6 py-8 gap-4 transition-opacity duration-500 ${fading ? 'opacity-0' : 'opacity-100'}`}>
                     {step === 0 && (
                         <>
                             <p className="text-white text-xl font-semibold text-center leading-snug">
@@ -133,7 +130,7 @@ export function Dialog() {
                             <p className="text-white text-xl font-semibold text-center leading-snug shrink-0">
                                 Are you open to exploring adult toys?
                             </p>
-                            <div className="flex-1 min-h-0 w-full">
+                            <div className="w-full aspect-[4/3]">
                                 <img
                                     src={toysImg}
                                     alt="Adult toys"
