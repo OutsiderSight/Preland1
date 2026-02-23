@@ -125,7 +125,7 @@ function ProfileCard({ name, age, location, imageUrl, isOnline }: Profile) {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-3">
                     <div className="flex items-center gap-1.5 mb-0.5">
-                        <span className={`w-2 h-2 rounded-full shrink-0 ${isOnline ? 'bg-green-400' : 'bg-gray-400'}`} />
+                        <span className={`w-2 h-2 rounded-full shrink-0 ${isOnline ? 'bg-green-400' : 'bg-red-400'}`} />
                         <span className="text-white font-semibold text-sm leading-tight">
                             {name}, {age}
                         </span>
