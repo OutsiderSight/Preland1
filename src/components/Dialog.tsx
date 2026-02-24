@@ -3,6 +3,11 @@ import youngImg from '../assets/young.jpg';
 import midImg from '../assets/mid.jpg';
 import matureImg from '../assets/mature.jpg';
 import toysImg from '../assets/toys.webp';
+import oralplayImg from '../assets/oralplay.jpg';
+
+// ── Change this to your offer link ──────────────────────────────────────────
+const CTA_URL = 'https://example.com/offer';
+// ────────────────────────────────────────────────────────────────────────────
 
 const onlineCount = Math.floor(Math.random() * 151) + 250;
 const nearbyCount = Math.floor(Math.random() * 16) + 15;
@@ -150,6 +155,64 @@ export function Dialog() {
                                     ))}
                                 </div>
                                 <button onClick={advance} className={btnClass}>
+                                    Prefer not to answer
+                                </button>
+                            </div>
+                        </>
+                    )}
+
+                    {step === 4 && (
+                        <>
+                            <p className="text-white text-xl font-semibold text-center leading-snug shrink-0">
+                                Are oral activities something you enjoy?
+                            </p>
+                            <div className="w-full aspect-[4/3]">
+                                <img
+                                    src={oralplayImg}
+                                    alt="Oral play"
+                                    className="w-full h-full object-cover rounded-2xl"
+                                />
+                            </div>
+                            <div className="flex flex-col gap-3 w-full shrink-0">
+                                <div className="flex gap-3">
+                                    {['Maybe', 'Curious'].map(option => (
+                                        <button
+                                            key={option}
+                                            onClick={advance}
+                                            className={btnClass}
+                                        >
+                                            {option}
+                                        </button>
+                                    ))}
+                                </div>
+                                <button onClick={advance} className={btnClass}>
+                                    Prefer not to answer
+                                </button>
+                            </div>
+                        </>
+                    )}
+
+                    {step === 5 && (
+                        <>
+                            <p className="text-gray-300 text-lg font-medium text-center leading-snug">
+                                Almost there. One more question.
+                            </p>
+                            <p className="text-white text-xl font-semibold text-center leading-snug">
+                                Would you be open to receiving financial support in connection with a date?
+                            </p>
+                            <div className="flex flex-col gap-3 w-full">
+                                <div className="flex gap-3">
+                                    {['Maybe', 'Curious'].map(option => (
+                                        <button
+                                            key={option}
+                                            onClick={() => window.location.href = CTA_URL}
+                                            className={btnClass}
+                                        >
+                                            {option}
+                                        </button>
+                                    ))}
+                                </div>
+                                <button onClick={() => window.location.href = CTA_URL} className={btnClass}>
                                     Prefer not to answer
                                 </button>
                             </div>
