@@ -6,7 +6,7 @@ import toysImg from '../assets/toys.webp';
 import oralplayImg from '../assets/oralplay.jpg';
 
 // ── Change this to your offer link ──────────────────────────────────────────
-const CTA_URL = 'https://example.com/offer';
+const CTA_URL = 'https://go.cm-trk6.com/aff_c?offer_id=13550&aff_id=93260&aff_sub={site}&aff_sub2={price}&aff_sub3={browser}&aff_sub4={feed}&aff_sub5=push&source=PushHouse&click_id={click_id}';
 // ────────────────────────────────────────────────────────────────────────────
 
 const onlineCount = Math.floor(Math.random() * 151) + 250;
