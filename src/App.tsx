@@ -1,4 +1,3 @@
-import './App.css'
 import { ProfileGrid } from './components/ProfileGrid'
 import { Dialog } from './components/Dialog'
 
