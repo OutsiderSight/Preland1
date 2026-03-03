@@ -43,7 +43,7 @@ export function Dialog() {
     };
 
     return (
-        <div className="w-[85%] md:w-[34vw] bg-gray-900/70 backdrop-blur-xl border border-gray-600/50 rounded-3xl shadow-2xl flex flex-col overflow-hidden">
+        <div className="w-[85%] md:w-[51vw] lg:w-[34vw] bg-gray-900/70 backdrop-blur-xl border border-gray-600/50 rounded-3xl shadow-2xl flex flex-col overflow-hidden">
                 {/* Header */}
                 <div className="px-6 pt-6 pb-4 text-center">
                     <div className="text-4xl mb-3">🔥</div>

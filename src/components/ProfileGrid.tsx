@@ -139,7 +139,7 @@ function ProfileCard({ name, age, location, imageUrl, isOnline }: Profile) {
 
 export function ProfileGrid() {
     return (
-        <div className="w-full md:w-[40vw] mx-auto px-0 md:px-4 py-4">
+        <div className="w-full md:w-[60vw] lg:w-[40vw] mx-auto px-0 md:px-4 py-4">
             <div className="grid grid-cols-3 gap-2 md:gap-3">
                 {profiles.map((profile, index) => (
                     <ProfileCard key={index} {...profile} />
